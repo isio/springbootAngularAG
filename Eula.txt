@@ -1,0 +1,432 @@
+Directorio Principal del curso de Spring con Angular 					C:\Users\Mireya\Documents\Udemy\Spring5
+
+Seccion 2 Clase 8		5:57
+C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> ng serve -o
+
+
+{id: 1, nombre: 'Andrés', apellido: 'Guzmán', email: 'profesor@bolsadeideas.com', createAt:'2017-12-11'},
+{id: 2, nombre: 'Mr. John', apellido: 'Doe', email: 'john.doe@gmail.com', createAt:'2017-12-11'},
+{id: 3, nombre: 'Linus', apellido: 'Torvalds', email: 'linus.torvalds@gmail.com.com', createAt:'2017-12-12'},
+{id: 4, nombre: 'Rasmus', apellido: 'Lerdorf', email: 'rasmus.lerdorf@gmail.com', createAt:'2017-12-13'},
+{id: 5, nombre: 'Erich', apellido: 'Gamma', email: 'erich.gamma@gmail.com', createAt:'2017-12-14'},
+{id: 6, nombre: 'Richard', apellido: 'Helm', email: 'richard.helm@gmail.com', createAt:'2017-12-15'},
+{id: 7, nombre: 'Ralph', apellido: 'Jonhson', email: 'ralph.jonhson@gmail.com', createAt:'2017-12-16'},
+{id: 8, nombre: 'Bombasto', apellido: 'Vlissides', email: 'bombasto.vlissides@gmail.com', createAt:'2017-12-17'},
+{id: 9, nombre: 'Dr. James', apellido: 'Gosling', email: 'james.gosling@gmail.com', createAt:'2017-12-18'},
+{id: 10, nombre: 'Magma', apellido: 'Lee', email: 'magma.lee@gmail.com', createAt:'2017-12-19'},
+{id: 11, nombre: 'Tornado', apellido: 'Roe', email: 'tornado.roe@gmail.com', createAt:'2017-12-20'}
+
+Seccion 3 Clase 21
+Configurando BootStrap de Forma Local			04:08
+
+26 .- Instalación y configuración del IDE
+
+
+El app.component.TS es el CONTROLADOR en el MVC
+El app.component.HTML es la VISTA en el MVC
+El app.MODULE.ts   Repositorio, Contenedor
+
+El cliente.service.ts es la logica del negocio MODELO
+
+
+spring.datasource.url=jdbc:mysql://localhost/db_springboot_backend
+spring.datasource.username=root
+spring.datasource.password=sasa
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQL57DBDialect
+spring.jpa.hibernate.ddl-auto=create-drop
+logging.level.org.hibernate.SQL=debug
+
+
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\app\Mireya\product\11.2.0\dbhome_1\bin;C:\app\Mireya\product\12.1.0\dbhome_1\bin;C:\app\Mireya\product\12.1.0\dbhome_2\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;%SystemRoot%\system32;%JAVA_HOME%\bin;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\EgisTec MyWinLocker\x64;C:\Program Files (x86)\EgisTec MyWinLocker\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;%M2%;%CATALINA_HOME%\bin;%GRAILS_HOME%\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\xampp\php;%XMLBEANS_HOME%\bin;C:\Program Files\nodejs\
+
+ C:\Program Files (x86)\Common Files\Oracle\Java\javapath;
+ C:\oraclexe\app\oracle\product\11.2.0\server\bin;
+ ;
+ C:\app\Mireya\product\11.2.0\dbhome_1\bin;
+ C:\app\Mireya\product\12.1.0\dbhome_1\bin;
+ C:\app\Mireya\product\12.1.0\dbhome_2\bin;
+ C:\oraclexe\app\oracle\product\11.2.0\server\bin;
+ C:\Program Files (x86)\RSA SecurID Token Common;
+ C:\Program Files (x86)\Intel\iCLS Client\;
+ C:\Program Files\Intel\iCLS Client\;
+ %SystemRoot%\system32;
+ %JAVA_HOME%\bin;
+ %SystemRoot%;
+ %SystemRoot%\System32\Wbem;
+ %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;
+ C:\Program Files (x86)\EgisTec MyWinLocker\x64;
+ C:\Program Files (x86)\EgisTec MyWinLocker\;
+ C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;
+ C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;
+ C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;
+ C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;
+ C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;
+ C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;
+ C:\Program Files (x86)\Skype\Phone\;
+ C:\Program Files\PuTTY\;
+ C:\Program Files\Git\cmd;
+ %M2%;
+ %GRAILS_HOME%\bin;
+ C:\Program Files\TortoiseSVN\bin;
+ C:\Program Files\SlikSvn\bin;
+ C:\xampp\php;
+ %XMLBEANS_HOME%\bin;
+ C:\Program Files\nodejs\
+ 
+ C:\Users\Mireya\Downloads\TomCat\apache-tomcat-6.0.32\bin\
+ C:\Users\Mireya\Downloads\TomCat\apache-tomcat-6.0.32
+ 
+ ng config -g cli.warnings.versionMismatch false
+ 
+ 
+ npm install sweetalert2 --save
+
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> npm install --save  @angular/material-moment-adapter
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>   npm install --save moment
+
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g c clientes/detalle
+
+www.http://iconfinder.com
+not user
+
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g s clientes/detalle/modal
+
+https://www.openssl.org/
+		Comumnity
+			binaries
+				wiki
+https://slproweb.com/products/Win32OpenSSL.html
+		Win64 OpenSSL v1.1.0k	
+
+LLAVE PRIVADA
+C:\Users\Mireya>openssl genrsa -out jtw.pem
+C:\Users\Mireya>openssl rsa -in jtw.pem
+
+LLAVE PUBLICA
+C:\Users\Mireya>openssl rsa -in jtw.pem -pubout
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Microsoft Windows [Versión 6.3.9600]
+(c) 2013 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Mireya>echo %PATH%
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\app\Mireya\product\11.2.0\dbho
+me_1\bin;C:\app\Mireya\product\12.1.0\dbhome_1\bin;C:\app\Mireya\product\12.1.0\dbhome_2\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bi
+n;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\s
+ystem32;C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Fi
+les (x86)\EgisTec MyWinLocker\x64;C:\Program Files (x86)\EgisTec MyWinLocker\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program
+ Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) M
+anagement Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R)
+ Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Maven\apache-maven
+-3.5.0\bin;C:\grails-2.2.2\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\xampp\php;C:\Users\Mireya\Downloads\xmlbeans
+-3.0.1\bin;C:\Program Files\nodejs\;C:\OpenSSL-Win64\bin;C:\Users\Mireya\AppData\Local\atom\bin;C:\Users\Mireya\AppData\Roaming\npm;C:\Users
+\Mireya\AppData\Local\Programs\Microsoft VS Code\bin
+
+C:\Users\Mireya>openssl genrsa -out jtw.pem
+Generating RSA private key, 2048 bit long modulus
+......................+++++
+...................+++++
+e is 65537 (0x010001)
+
+C:\Users\Mireya>openssl rsa -in jtw.pem
+writing RSA key
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAw341TclTbw2fdrmXUwZcbm7qEISzCHUBR8O7XpXRvOXEfWhH
+L6XdbjenY0d/dPefpDALtlnaGfUU782ZRJxL+Uu5HcJGVlYPJYVSgZDCg6FStNjm
+oC+nSUmLQ0K/B438O3OZD71355Us3/USk6fU0c1ZqbNrqE35zgjc2s49O246TFWo
+BEl0DEOUPY851tEuIcTXlPWSs2ifTOudGjlXtcOiNi+6uhMuryFVcGk6aNUOHdc/
+3TzINPqIDQhoqRfoIp/bi0Es4e7YP0VI1Ib1BvLQo7+DAqLR5mrVW7oCVjiW8If+
+e4v0ZNUwvBO4jVwJZVsprPHPr79JufeyiKTICwIDAQABAoIBAGzcyDQj65lI/cbw
+fKsYPLqmeyNtsgEAnxDml12Jkn1defjX6+RFujQZO9ZWR0zMZBLbSnpmOMUBrIIJ
+fNMvMkOF/nTq7Z5AWDjtsE9EXH1Oha79phgH0WFHWgy/i39aet5kdhTEzpOgh5fD
+cm/VIvceIlMU/duAaJ5qYwpZlNGVioPvM7Qp68RKWRF4sioHsTt6IBc+sOQjIlJL
+KQG6jWUcWTkcLurK50p7chVSeC5Qqs/GG0VkAz7r4WOL/KSkcZk5JMxiNb0FmlbK
+TIY58kuDaJNZe/11tA7c8v2mLDFYmIc8HkUsnXCpJ249zhnIdrxsMa+rW18UoIjE
+ML5NhJECgYEA+wdzcGh7ggNcnsGiN19kTqU2p5ipxHS6J+dhA8mjp13egAspPTGt
+LmRJfEgLcqR9HTWCe4T050jTNyRPbtVQ4gRYMTJYfmsok2PFNbWMUo1e2DfGcSkK
+XraIAxmHj3cTRwQHrIS4Y+ZmtS8cIItAXcmaXIhTbbDnhw80UPD1LLkCgYEAx105
+/LfNeAxhckaxdvmTh2jHUV9qL2f2bTOLZ0l5llXZO/jGyHTgvjnAElX2+hsNg74I
+hjn/GqO58Pk9TJFZFqWr9C/aIA7HnsokPI9X9DwMKLD7lB6fNVzmJ4DoL4Uw9Rll
+xe2v55Q1OnOrr41k67kjVeNFEmWmURjRcSlfIOMCgYBA+GK2WzRsJ/aW2ELl1fie
+KkCFDAwUXqm3njkLw+ppbPAjb8ASqILMGQSz9+mOmGgRYUIOOhEwszaHdQxiAS/X
+74vr373rqkxsKUxnZD+XNiOwDm975kVa0h9NvhPJ2+XPYYmi6w7WPFGk3zaGbcQR
+AhbDkD0XjMu/tv2xXUv3cQKBgDfht9lQo/VccwwXKLNSrbms8wGqHxd+qqJdalvf
+SoeLNMMMrpuNt1la0q3RDtN4NceRws3s/8a10e7rzfTiYPhqI9Lkft2xht7JhnK7
+M0owcrANO9d+5d2NVq4IAg0f5mMtZUufnkjpUCo8NgmVNo6kbHUsqTXI7F+a90oi
+8JlFAoGAV8PWEUlHfSec/OpGwPDSuSp95nk4D/h94RaUd9iTWXDhaUxxFnAS6zH3
+LxZD16IcZEMsS+Sl0EtGCI6snP8rJRThdrouc6Qbis6+ev3VGWey19BFaeR4pJph
+vctJJrLI+ZEViM8QQIt1Dqf871B0Ykn2vjhGeqiCqr59ti5PjtM=
+-----END RSA PRIVATE KEY-----
+
+C:\Users\Mireya>openssl rsa -in jtw.pem -pubout
+writing RSA key
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw341TclTbw2fdrmXUwZc
+bm7qEISzCHUBR8O7XpXRvOXEfWhHL6XdbjenY0d/dPefpDALtlnaGfUU782ZRJxL
++Uu5HcJGVlYPJYVSgZDCg6FStNjmoC+nSUmLQ0K/B438O3OZD71355Us3/USk6fU
+0c1ZqbNrqE35zgjc2s49O246TFWoBEl0DEOUPY851tEuIcTXlPWSs2ifTOudGjlX
+tcOiNi+6uhMuryFVcGk6aNUOHdc/3TzINPqIDQhoqRfoIp/bi0Es4e7YP0VI1Ib1
+BvLQo7+DAqLR5mrVW7oCVjiW8If+e4v0ZNUwvBO4jVwJZVsprPHPr79JufeyiKTI
+CwIDAQAB
+-----END PUBLIC KEY-----
+
+C:\Users\Mireya>
+
+
+LOGIN
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> ng g c usuarios/login --flat=true
+
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> ng g class usuarios/usuario
+
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> ng g s usuarios/auth
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+142 Chequear en el componente login si el usuario ya ha iniciado session.					16 de Julio del 2019
+Como manejar un error 400 cuando le das una clave incorrecta
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+20 Julio 2019
+login.component.ts
+auth.service.ts				Cerrar session con exito!
+header.component.html
+header.component.ts
+
+
+21 Julio 2019
+cliente.service.ts			Agragar a los header la Authorization.
+cliente.service.ts
+
+auth.service.ts				Authorization de hasRole
+clientes.components.ts		para ver los botones de los perfiles autorizados
+clientes.component.html
+detalle.component.ts		
+detalle.component.html
+
+cliente.service.ts		que pasa cuando el token expira en el backEnd
+
+Para cuando las url son inyectadas con rutas que deben estar protegidas, GUARD o interseptors
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> ng g g usuarios/guards/auth
+auth.guard.ts				se configura
+app.module.ts				se implementa la configuración del guard
+
+La seguridad dependiendo del ROLE, que nada más deje pasar el ROLE que este logueado
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> ng g g usuarios/guards/role
+app.module.ts				se implementa la configuración del role
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>151						1qaz2wsx_c
+
+auth.guard.ts				Validando la fecha del token en el AuthGuard
+
+cliente.service.ts			Agregar el token a las cabeceras, vemos que se agregan las cabeceras por cada http
+https://angular.io/guide/http				Intercepting requests and responses
+https://angular.io/guide/http#intercepting-requests-and-responses
+
+PS C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app> ng g class usuarios/interceptors/token
+
+token.interceptor.ts		Se crea el interceptor
+app.module.ts				Se configura
+cliente.service.ts			eliminar las cabeceras
+
+cliente.service.ts			Para los códigos 401 y 403
+src\app\usuarios\interceptors\auth.interceptor.ts			Nuevo interceptor, es creado 
+app.module.ts				Se configura
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>143>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>143>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+156  -> Análisis y Diseño OO con UML Diagrama de Clases de Dominio
+Start UML						http://staruml.io/download
+
+160
+
+162	-> añadiendo las clases typescript factura, itemfactura y producto en angular
+
+C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g class facturas/models/factura
+C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g class facturas/models/itemFactura
+C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g class facturas/models/producto
+
+-EntityFactura.java
+-IFacturaDao.java
+-IClienteService.java		Pero se pudo hacer el IFacturaService.java
+-ClienteServiceImpl.java
+-FacturaRestController.java
+
+C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g c facturas/datallefacturas --flat
+C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g s facturas/services/facturas
+
+171 Creando el componente formulario de la factura
+C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng g c facturas
+En el app.module crear la ruta
+		{ path: 'facturas/form/:clienteId', component: FacturasComponent }
+implementar facturas.Component.ts
+Revisar el clientes.components.html
+
+172 Añadiendo campos al formulario de factura
+facturas.components.html
+
+173
+Congfiguración del Autocomplete, BUSQUEDA DE PRODUCTOS, REACTIVEFORMMODULE
+facturas.components.html
+facturas.Component.ts
+app.moodule			MatAutoComplete
+
+174 Consulta JPA para buscar el producto en el autocomplete
+		a) Ya esta creado el Entity que es la base					Producto
+		b) creamos la clase interface								IProductoDao
+		c) creamos la interface de servicio							IClienteService		aunque pudieramos construir nuestro propia interface de servicio
+		d) implementar el metodo que recien hemos creado en el b)	ClienteServiceImpl
+		d) implementación del controllador							FacturaRestController
+		
+		CIICC
+		EDSIC
+		NAEMO
+		TORPN
+		I VLT
+		T IER
+		Y CMO
+		  EEL
+		   NL
+		   TE
+		   AR
+		   T
+		   I
+		   O
+		   N
+		   
+175 Modificando el autocomplete para que filtre los productos desde el BackEnd
+	factura.service.ts
+	factura.service.html
+
+176 Creando las líneas de las facturas
+	factura.service.html
+	factura.service.ts
+
+177 Actualizando la cantidad de Items en la factura.
+
+178 incrementado la cantidad si el producto existe en el detall
+179 eliminar una linea en la factura
+
+180 calculando el gran total de la factura
+factura.ts
+factura.service.html
+
+181 implementado crear la factura, en el backend y frontEnd
+	facturaRestController.java				public Factura crear
+	factura.services.ts						create(factura: Factura)
+	factura.component.html					(click)=create
+	factura.component.ts					create():void
+
+182 validando el formulario de la factura
+	facturas.component.html
+	
+183 reglas de spring security
+	ResourceServerConfig.java
+	ClienteRestController.java
+	FacturaRestController.java
+	app.module.ts
+	clientes.component.html
+	detalle.component.html
+	
+184 Solucionando el problema de recursión al editar el cliente.
+	cliente.java
+	factura.java
+	form.component.ts
+	
+186 Modificando y preparando nuestros proyectos, backend y FrontEnd
+	ClienteRestController.java
+	FacturaRestController.java
+	ResourceServerConfig.java
+	import.sql
+	clientes.component.ts
+	detalle.component.ts
+	form.component.ts
+	header.component.ts
+	facturas.component.ts
+
+187 Generando el JAR y realizando el despliegue en el backEnd
+Limpiar y Compilar		PS C:\Users\Mireya\Documents\Udemy\Spring5\Spring\workspace\spring-boot-backend-apirest> .\mvnw.cmd clean package
+Publicar				PS C:\Users\Mireya\Documents\Udemy\Spring5\Spring\workspace\spring-boot-backend-apirest> java -jar .\target\spring-boot-backend-apirest-0.0.1-SNAPSHOT.jar
+
+Para el WAR tendriamos que tener el la clase ServletInitializer dentro del package base del proyecto
+
+188 Transpilando nuestra aplicación Angular y preparandonos para el despliegue.
+	Ir					https://angular.io/guide/deployment
+	ejecutar			C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app>ng build --prod
+	
+	Se crea la carpeta	C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app\dist
+	cambiamos de PATH	C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app			[Cerramos essta ruta]
+	a Este nuevo		C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app\dist
+	
+	Crear 				.htaccess, editarlo segun http://angular.io/guide/deployments
+	Editar el index.html
+	
+189 Realizando el despliegue del frontEnd  Angular en el servidor Apache 24(httpd)
+	Ir					http://httpd.apache.org/			http://httpd.apache.org/download.cgi
+						https://www.apachelounge.com/download/
+						
+						http.conf
+									LoadModule rewrite_module modules/mod_rewrite.so
+									AllowOverride All
+	Ir					PS C:\WINDOWS\system32> cd C:\Apache24\bin
+						PS C:\Apache24\bin> .\httpd.exe
+
+190 Realizando el despliegue de nuestra app Angular con NodeJS y Express
+	Al archivo index.html		<base href="/">
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app\dist>npm init
+	entry point: (index.js) server.js
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app\dist>npm install express --save
+	
+	crear 		server.js
+	Pa levantarlo		C:\Users\Mireya\Documents\Udemy\Spring5\Angular\clientes-app\dist>node .\server.js
+	
+192 Creando app en Heroku
+Ir						www.heroku.com
+uss						israellcid@gmail.com
+pass					w;E63V+Yt#$R&vJ
+App						is-spring-boot2-heroku
+
+193 Deploy backEnd Spring en Heroku
+
+200 Creando el proyecto backend y configurando el servidor de websockets [el broker]
+
+202 Creando el proyecto FrontEnd en Angular
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular>ng new chat-app
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular>cd chat-app
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular>ng g c chat
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular\chat-app>code .
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular\chat-app>npm i bootstrap jquery popper.js --save
+
+203 intalando librerias para el cliente websoket en angular (sockjs y stompjs)
+	www.npmjs.com/packages/@stomp/stompjs
+	npm i @stomp/stompjs --save
+	npm i sockjs-client --save
+	npm i @types/sockjs-client --save-dev
+	
+204 maquetando y escribiendo el código html para el chat
+	
+	ul.nav.nav.pills.card-headers-pills>li.nav-item*2
+	button.btn.btn-success
+
+206 implementando el enviar y recibir mensajes en el chat
+
+	C:\Users\Mireya\Documents\Udemy\Spring5\Angular\chat-app>ng g class chat/models/mensaje
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
